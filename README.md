@@ -3,14 +3,14 @@
 ## 1. 使用multipass创建三个节点，配置如下：
 | host name | CPU core number | Memory size | disk size |
 | --------- | --------------- | ----------- | --------- |
-| master    | 1               | 1G          | 3G        |
-| worker1   | 1               | 1G          | 3G        |
-| worker2   | 1               | 1G          | 3G        |
+| master    | 1               | 1G          | 5G        |
+| worker1   | 1               | 1G          | 5G        |
+| worker2   | 1               | 1G          | 5G        |
 
 ```
-multipass launch --name master --memory 1G --disk 3G 20.04
-multipass launch --name worker1 --memory 1G --disk 3G 20.04
-multipass launch --name worker2 --memory 1G --disk 3G 20.04
+multipass launch --name master --memory 1G --disk 5G 20.04
+multipass launch --name worker1 --memory 1G --disk 5G 20.04
+multipass launch --name worker2 --memory 1G --disk 5G 20.04
 ```
 
 ## 2. 在master节点上安装k3s组件
